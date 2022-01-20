@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset='UTF-8'>
+    <meta http-equiv='X-UA-Compatible' content="IE=edge">
+    <meta name='viewport' content="width=device-width, initial-scale=1.0">
+    <title>JOGO DA VELHA</title>
+    <link rel='stylesheet' href='style.css'>
+</head>
+<body>
+    <div id='menu'>
+        <h2>JOGO DA VELHA</h2>
+        <select name="setLevel" id="setLevel">
+            <option value=1 selected>Nível Fácil</option>
+            <option value=2>Nível Difícil</option> 
+        </select>
+        <button type="button" onclick='begins()'>Iniciar jogo</button>
+        <p id='whoStarts'>Quem começa: </p>
+    </div>
+    <div id='game'>
+        <div id='p1' class="gamePos" onclick="play(1)"></div>
+        <div id='p2' class="gamePos" onclick="play(2)"></div>
+        <div id='p3' class="gamePos" onclick="play(3)"></div>
+        <div id='p4' class="gamePos" onclick="play(4)"></div>
+        <div id='p5' class="gamePos" onclick="play(5)"></div>
+        <div id='p6' class="gamePos" onclick="play(6)"></div>
+        <div id='p7' class="gamePos" onclick="play(7)"></div>
+        <div id='p8' class="gamePos" onclick="play(8)"></div>
+        <div id='p9' class="gamePos" onclick="play(9)"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
